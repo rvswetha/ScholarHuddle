@@ -9,7 +9,7 @@ import AIStudyTools from './pages/AIStudyTools.jsx';
 import Timetable from "./pages/Timetable";
 import Login from './pages/Login';
 import Pomodoro from './pages/Pomodoro';
-import StudyRoom from './pages/Studyroom';
+import StudyRoom from './pages/StudyRoom';
 
 const router = createBrowserRouter([
   {path: '/', element: <App />,
