@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GroupsHub from '../components/StudyGroupChatroom/GroupsHub';
 import LiveMeeting from '../components/StudyGroupChatroom/LiveMeeting';
-import './studyroom.css';
+import './StudyRoom.css';
 
 const Studyroom = () => {
   const [isMeetingLive, setIsMeetingLive] = useState(false);
