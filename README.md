@@ -60,3 +60,7 @@ The Layers and it's Technology
 
 &nbsp;  Utilized Custom React Hooks (usePomodoro) to share complex timer logic across multiple UI components (Main Timer page vs. Sidebar Widget), ensuring a "Single Source of Truth" for session data.
 
+
+Project Demo
+[![Watch the Demo]("https://drive.google.com/file/d/1IVMVeXXxybazi98GyUhYTxF9g0ZmA27c/view?usp=sharing")](https://youtu.be/Z7fnklGqjiY)
+*Click the image above to watch the full walkthrough of ScholarHuddle.*
