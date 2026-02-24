@@ -1,0 +1,117 @@
+.studyroom-page {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.studyroom-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.header-text h1 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+}
+
+.header-text p {
+  color: #64748b;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.studyroom-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Meetings Sidebar */
+.meetings-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.meetings-card h3 {
+  color: #1e293b;
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+}
+
+.meetings-desc {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.meeting-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.start-meeting-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.start-meeting-btn:hover {
+  background: #2563eb;
+}
+
+.schedule-meeting-btn {
+  background: white;
+  color: #3b82f6;
+  border: 2px solid #e2e8f0;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.schedule-meeting-btn:hover {
+  border-color: #3b82f6;
+}
+
+.meeting-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #cbd5e1;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .studyroom-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,56 @@
+.dashboard-charts-container {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chart-header {
+  margin-bottom: 20px;
+}
+
+.chart-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.chart-header p {
+  margin: 4px 0 0 0;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.chart-wrapper {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.pomodoro-section {
+  display: none;
+}
+
+.streak-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #ff4d4d, #f9cb28);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
+  width: fit-content;
+}
+
+.fire-icon { font-size: 24px; animation: flicker 1.5s infinite; }
+
+@keyframes flicker {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.streak-num { font-size: 22px; font-weight: 900; }
+.streak-label { font-size: 10px; text-transform: uppercase; font-weight: 700; display: block; }

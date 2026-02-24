@@ -1,0 +1,16 @@
+.completed-task-event {
+  text-decoration: line-through !important;
+  opacity: 0.7; /* Makes it look slightly faded/done */
+}
+
+/* Ensure the calendar events look clean */
+.fc-event {
+  cursor: pointer;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: none !important;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}

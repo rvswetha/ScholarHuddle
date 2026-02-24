@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Secrets (The most important part!)
+client/.env
+server/.env
+server/src/config/firebase-service-account.json
+firebase-service-account.json
+
+# Production Builds
+client/dist/
+dist/
+
+# System Junk
+.DS_Store
+Thumbs.db
+*.log

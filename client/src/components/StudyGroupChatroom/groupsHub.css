@@ -1,0 +1,118 @@
+.groups-hub-container {
+  position: relative;
+  width: 100%;
+}
+
+.groups-dashboard {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.groups-dashboard h3 {
+  color: #0f172a;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
+}
+
+.groups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.group-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.group-card:hover {
+  border-color: #3b82f6;
+  background: #f0fdf4;
+  transform: translateY(-2px);
+}
+
+.group-info h4 {
+  margin: 0 0 6px 0;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.code-badge {
+  font-size: 0.75rem;
+  background: #e2e8f0;
+  color: #475569;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.join-chat-btn {
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.group-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.action-form h4 {
+  margin-bottom: 12px;
+  color: #334155;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6;
+}
+
+.input-group button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.join-form button {
+  background: #f59e0b; /* Distinct color for joining */
+}
+
+@media (max-width: 768px) {
+  .group-actions {
+    grid-template-columns: 1fr;
+  }
+}

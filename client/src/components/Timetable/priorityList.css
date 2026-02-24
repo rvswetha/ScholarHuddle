@@ -1,0 +1,89 @@
+/* client/src/components/Timetable/priorityList.css */
+
+.daily-agenda {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+}
+
+.agenda-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.priority-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.priority-item {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.priority-item.urgent {
+  background: #fff1f2; /* Light red background */
+  border: 1px solid #fecdd3;
+  animation: pulse-border 2s infinite;
+}
+
+.priority-item.urgent .task-name { color: #be123c; }
+.priority-item.urgent .task-timer { color: #e11d48; font-weight: 600; }
+
+@keyframes pulse-border {
+  0% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.2); }
+  70% { box-shadow: 0 0 0 10px rgba(225, 29, 72, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0); }
+}
+
+.rank-badge {
+  width: 40px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #94a3b8;
+}
+
+.task-info { flex-grow: 1; }
+
+.task-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.task-timer {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.complete-check {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  color: #94a3b8;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.complete-check:hover {
+  background: #22c55e;
+  color: white;
+  border-color: #22c55e;
+}

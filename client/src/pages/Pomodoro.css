@@ -1,0 +1,213 @@
+.pomodoro-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust based on your navbar height */
+  background-color: #f8fafc;
+  padding: 20px;
+}
+
+.pomodoro-widget {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Theme Colors */
+.pomodoro-widget.work { --pomo-color: #ef4444; }
+.pomodoro-widget.break { --pomo-color: #10b981; }
+
+.widget-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.widget-header h2 {
+  margin: 0 0 10px 0;
+  color: #1e293b;
+  font-size: 1.5rem;
+}
+
+.mode-pill {
+  background: var(--pomo-color);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.clock-container {
+  margin-bottom: 30px;
+}
+
+.progress-ring {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* The gradient is injected via inline style in the JSX */
+}
+
+.progress-ring::before {
+  content: '';
+  position: absolute;
+  top: -10px; left: -10px; right: -10px; bottom: -10px;
+  border-radius: 50%;
+  border: 4px solid #f1f5f9;
+  z-index: 0;
+}
+
+.clock-face {
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.time-huge {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.time-subtext {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.session-complete-msg {
+  color: var(--pomo-color);
+  font-weight: bold;
+  margin: 5px 0 0 0;
+  font-size: 0.9rem;
+}
+
+/* Controls */
+.main-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.btn-massive {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.btn-massive:active { transform: scale(0.98); }
+.btn-massive.start { background: var(--pomo-color); color: white; }
+.btn-massive.pause { background: #f59e0b; color: white; }
+.btn-massive.next { background: #3b82f6; color: white; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3); }
+
+/* 1. UPGRADE THE RESET BUTTON */
+.btn-subtle {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-subtle:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.stats-row {
+  color: #475569;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+/* Settings Form */
+.settings-panel {
+  width: 100%;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; 
+  gap: 12px;
+  box-sizing: border-box; 
+}
+
+.settings-inputs {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.input-group label {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.input-group input {
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+    width: 100%; 
+  box-sizing: border-box; 
+  min-width: 0; 
+}
+
+.btn-apply {
+  background: #1e293b;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%; /* 🚀 Makes the button stretch fully across */
+}
+
+.btn-apply:active {
+  transform: scale(0.98);
+}

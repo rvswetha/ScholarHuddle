@@ -1,0 +1,57 @@
+.close-btn {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+}
+.close-btn:hover {
+  color: #ff4d4d;
+}
+.input-row textarea {
+  min-height: 40px;
+  max-height: 80px;
+}
+
+/* Main messages container */
+.messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background: #f8fafc; /* Slightly cooler background */
+  scroll-behavior: smooth;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+
+.message {
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  max-width: 75%;
+  word-wrap: break-word;
+  align-self: flex-start; 
+  border-bottom-left-radius: 4px; /* Gives it a chat tail */
+}
+
+.message.me {
+  background: #2a9d8f; /* Beautiful teal color */
+  color: white;
+  align-self: flex-end; 
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 4px; /* Flips the chat tail */
+}
+
+.sender-name {
+  font-size: 0.75rem;
+  color: #2a9d8f;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.message.me .message-content {
+  color: white;
+}
