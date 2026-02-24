@@ -1,8 +1,7 @@
 import { supabase } from './supabaseClient';
 
 // This is the base URL of your backend server
-const API_URL = 'http://localhost:5000/api';
-
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 /**
  * A helper function to get the user's auth token.
  * This is how your server knows who you are.
